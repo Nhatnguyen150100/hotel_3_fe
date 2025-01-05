@@ -25,6 +25,11 @@ import DestinationDetailAdmin from "../modules/admin/menu/destination/Destinatio
 import CreateDestination from "../modules/admin/menu/destination/CreateDestination";
 import DestinationDetail from "../modules/destination-detail/DestinationDetail";
 import ListDestinations from "../modules/list-destinations/ListDestinations";
+import Introduce from "../modules/landing-page/Introduce";
+import PartyService from "../modules/service/PartyService";
+import ConferenceService from "../modules/service/ConferenceService";
+import KaraokeService from "../modules/service/karaokeService";
+import PlaygroundService from "../modules/service/PlaygroundService";
 
 const router = createBrowserRouter([
   {
@@ -39,6 +44,26 @@ const router = createBrowserRouter([
       {
         path: DEFINE_ROUTE.listRoom,
         element: <ListRoom />,
+      },
+      {
+        path: DEFINE_ROUTE.partyService,
+        element: <PartyService />,
+      },
+      {
+        path: DEFINE_ROUTE.conferenceService,
+        element: <ConferenceService />,
+      },
+      {
+        path: DEFINE_ROUTE.karaokeService,
+        element: <KaraokeService />,
+      },
+      {
+        path: DEFINE_ROUTE.playground,
+        element: <PlaygroundService />,
+      },
+      {
+        path: DEFINE_ROUTE.introduce,
+        element: <Introduce />,
       },
       {
         path: DEFINE_ROUTE.listNews,

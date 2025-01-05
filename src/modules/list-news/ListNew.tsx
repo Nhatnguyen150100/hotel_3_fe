@@ -60,7 +60,7 @@ export default function ListNew() {
                 <div className="space-y-3 bg-white py-5 px-3 rounded-b-2xl h-[220px]">
                   <Link
                     to={DEFINE_ROUTE.newDetail.replace(":id", item.id)}
-                    className="w-full text-lg font-semibold text-start hover:text-yellow-600 hover:cursor-pointer"
+                    className="w-full text-lg font-semibold text-start hover:text-blue-600 hover:cursor-pointer"
                   >
                     {item.name}
                   </Link>

@@ -70,7 +70,7 @@ export default function BookingPage() {
     }
     try {
       setLoading(true);
-      const rs = await bookingService.createBooking({...data, roomId})
+      const rs = await bookingService.createBooking({ ...data, roomId });
       message.success(rs.message);
       navigate(DEFINE_ROUTE.home);
     } catch (error: any) {
@@ -84,7 +84,7 @@ export default function BookingPage() {
     <div className="container bg-transparent sm:p-10 p-5">
       <div className="flex sm:flex-row flex-col justify-start sm:items-center items-start w-full mb-10 space-y-5">
         <span
-          className="flex flex-row justify-start items-center transform-hover hover:text-yellow-600 hover:cursor-pointer space-x-3"
+          className="flex flex-row justify-start items-center transform-hover hover:text-blue-600 hover:cursor-pointer space-x-3"
           onClick={() => {
             navigate(-1);
           }}
@@ -176,7 +176,7 @@ export default function BookingPage() {
 
             <div className="flex flex-row justify-end">
               <Button
-                className="h-[45px] w-[320px] bg-yellow-600 rounded-2xl hover:!bg-yellow-500 text-base"
+                className="h-[45px] w-[320px] bg-blue-600 rounded-2xl hover:!bg-blue-500 text-base"
                 type="primary"
                 variant="filled"
                 htmlType="submit"

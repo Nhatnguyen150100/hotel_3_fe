@@ -1,5 +1,10 @@
 const DEFINE_ROUTE = {
   home: "/",
+  introduce: "/introduce",
+  partyService: "/party-service",
+  conferenceService: "/conference-service",
+  karaokeService: "/karaoke-service",
+  playground: "/play-ground-service",
   listRoom: "/list-rooms",
   listNews: "/list-news",
   listDestinations: "/list-destinations",

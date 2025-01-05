@@ -93,7 +93,7 @@ export default function TheHeaderMobile() {
           <i className="fa fa-bars"></i>
           <img className="max-h-[40px]" src="/map.png" />
           <a
-            className="underline font-medium hover:text-yellow-600"
+            className="underline font-medium hover:text-blue-600"
             target="_blank"
             href="https://maps.app.goo.gl/WLt8oCQ4D9wWQxxP7"
           >

@@ -129,7 +129,9 @@ export default function DestinationsManager() {
   return (
     <>
       <div className="flex flex-col justify-start items-start space-y-5 w-full">
-        <h1 className="font-bold text-2xl">Danh sách các bài viết điểm đến</h1>
+        <h1 className="font-bold text-2xl">
+          Danh sách các bài viết khoảnh khắc đáng nhớ
+        </h1>
         <div className="flex flex-row justify-between items-center w-full">
           <BaseSearch
             value={query.nameLike!}

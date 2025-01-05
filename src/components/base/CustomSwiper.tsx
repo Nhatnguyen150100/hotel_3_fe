@@ -66,13 +66,13 @@ export default function CustomSwiper({ room }: { room: IRoom }) {
           className="absolute top-[-110px] z-50 rounded-full h-[32px] w-[32px] bg-white p-1 flex justify-center items-center hover:cursor-pointer transform-hover"
           onClick={handlePrev}
         >
-          <LeftOutlined className="hover:text-yellow-600" />
+          <LeftOutlined className="hover:text-blue-600" />
         </div>
         <div
           className="absolute top-[-110px] right-0 z-50 rounded-full h-[32px] w-[32px] bg-white p-1 flex justify-center items-center hover:cursor-pointer transform-hover"
           onClick={handleNext}
         >
-          <RightOutlined className="hover:text-yellow-600" />
+          <RightOutlined className="hover:text-blue-600" />
         </div>
       </div>
     </>

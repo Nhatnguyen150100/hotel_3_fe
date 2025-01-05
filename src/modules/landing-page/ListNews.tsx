@@ -6,6 +6,7 @@ import Visibility from "../../components/base/visibility";
 import { Empty } from "antd";
 import ImageHover from "../../components/base/ImageHover";
 import { DEFINE_ROUTE } from "../../constants/route-mapper";
+import displayDescription from "../../utils/displayDescription";
 
 export default function ListNews() {
   const [newList, setNewList] = React.useState<INew[]>([]);
@@ -22,17 +23,6 @@ export default function ListNews() {
   React.useEffect(() => {
     handleGetNewList();
   }, []);
-
-  const displayDescription = (text: string, maxLength = 100) => {
-    const lines = text.split("\n");
-    const newLines = lines.map((line) => {
-      if (line.length > maxLength) {
-        return `${line.slice(0, maxLength)}...`;
-      }
-      return line;
-    });
-    return newLines.join("\n");
-  };
 
   return (
     <div className="flex flex-col justify-start items-center w-full space-y-10">
@@ -64,7 +54,7 @@ export default function ListNews() {
 
                 <Link
                   to={DEFINE_ROUTE.newDetail.replace(":id", item.id)}
-                  className="w-full text-lg font-semibold text-start hover:text-yellow-600"
+                  className="w-full text-lg font-semibold text-start hover:text-blue-600"
                 >
                   {item.name}
                 </Link>
@@ -80,7 +70,7 @@ export default function ListNews() {
         onClick={() => {
           navigate(DEFINE_ROUTE.listNews);
         }}
-        className="hover:text-white hover:bg-yellow-600 text-yellow-600 font-light text-lg flex justify-center items-center border border-solid rounded-3xl border-yellow-600 px-3 py-2 min-w-[220px]"
+        className="hover:text-white hover:bg-blue-600 text-blue-600 font-light text-lg flex justify-center items-center border border-solid rounded-3xl border-blue-600 px-3 py-2 min-w-[220px]"
       >
         Xem thêm
       </button>

@@ -1,4 +1,3 @@
-
 import { Link, useLocation } from "react-router-dom";
 import {
   HomeOutlined,
@@ -12,6 +11,7 @@ import {
 import isChildUrl from "../../../utils/check-active-router";
 import { DEFINE_ROUTERS_ADMIN } from "../../../constants/route-mapper";
 import cookiesStore from "../../../plugins/cookiesStore";
+import { Divider } from "antd";
 
 const Sidebar = () => {
   const location = useLocation();
@@ -44,8 +44,8 @@ const Sidebar = () => {
     },
     {
       path: DEFINE_ROUTERS_ADMIN.destinationsManager,
-      label: "Quản lý điểm đến",
-      icon: <AimOutlined />
+      label: "Quản lý khoảnh khắc",
+      icon: <AimOutlined />,
     },
   ];
 
@@ -56,9 +56,10 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="flex flex-col w-80 h-screen bg-black text-white">
-      <div className="flex items-center justify-center h-16">
-        <h1 className="text-2xl font-bold">Logo</h1>
+    <div className="flex flex-col w-80 h-screen bg-blue-950 text-white">
+      <div className="flex flex-col items-center justify-center h-24">
+        <h1 className="text-2xl font-bold">Quản lý</h1>
+        <Divider className="w-20 bg-white !mb-0" />
       </div>
       <div className="flex flex-col mt-4 px-5 space-y-3">
         {menuItems.map((item) => {
@@ -67,8 +68,8 @@ const Sidebar = () => {
             <Link
               key={item.path}
               to={item.path}
-              className={`flex items-center py-3 px-4 hover:bg-white hover:text-black transition-colors rounded-2xl ${
-                isActive ? "bg-white text-black" : ""
+              className={`flex items-center py-3 px-4 hover:bg-white hover:text-blue-950 transition-colors rounded-2xl ${
+                isActive ? "bg-white text-blue-950" : ""
               }`}
             >
               <span className="mr-2">{item.icon}</span>
@@ -77,7 +78,7 @@ const Sidebar = () => {
           );
         })}
         <div
-          className="flex items-center py-3 px-4 hover:cursor-pointer hover:bg-white hover:text-black transition-colors rounded-2xl"
+          className="flex items-center py-3 px-4 hover:cursor-pointer hover:bg-white hover:text-blue-950 transition-colors rounded-2xl"
           onClick={handleLogOut}
         >
           <span className="mr-2">{<LoginOutlined />}</span>

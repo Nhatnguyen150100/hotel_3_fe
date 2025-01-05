@@ -14,7 +14,7 @@ interface IProps {
   handleSearch: (startDate: Dayjs | null, endDate: Dayjs | null) => void;
 }
 
-export default function SearchRoom({handleSearch} : IProps) {
+export default function SearchRoom({ handleSearch }: IProps) {
   const [searchParams, setSearchParams] = useSearchParams();
   const [startDate, setStartDate] = useState<Dayjs | null>(
     searchParams.get("startDate") !== "null" && searchParams.get("startDate")
@@ -61,10 +61,13 @@ export default function SearchRoom({handleSearch} : IProps) {
               setStartDate(null);
               setEndDate(null);
               setSearchParams(
-                onRemoveParams({
-                  startDate: null,
-                  endDate: null,
-                },[null])
+                onRemoveParams(
+                  {
+                    startDate: null,
+                    endDate: null,
+                  },
+                  [null]
+                )
               );
               handleSearch(null, null);
             }
@@ -75,7 +78,7 @@ export default function SearchRoom({handleSearch} : IProps) {
           format="DD/MM/YYYY"
         />
       </div>
-      <div className="flex flex-col space-y-3 w-full sm:w-auto">
+      {/* <div className="flex flex-col space-y-3 w-full sm:w-auto">
         <label className="text-base font-medium">Số phòng</label>
         <Input
           className="h-[45px]"
@@ -96,14 +99,14 @@ export default function SearchRoom({handleSearch} : IProps) {
           }
           placeholder="Nhập mã khuyến mãi"
         />
-      </div>
+      </div> */}
       <Button
-        className="h-[45px] bg-yellow-600 hover:!bg-yellow-500"
+        className="h-[45px] bg-blue-600 hover:!bg-blue-500"
         type="primary"
         variant="filled"
         icon={<SearchOutlined />}
         onClick={() => {
-          if(!(startDate && endDate)) {
+          if (!(startDate && endDate)) {
             message.error("Vui lòng chọn ngày nhận và trả phòng");
             return;
           }

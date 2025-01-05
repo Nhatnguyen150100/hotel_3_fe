@@ -8,16 +8,18 @@ export default function TheFooter() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           <div className="flex flex-col justify-start items-start space-y-4">
             <h3 className="font-semibold text-white text-xl">
-              KHÁCH SẠN PHƯỢNG HOÀNG 2
+              KHÁCH SẠN PHƯỢNG HOÀNG 3
             </h3>
             <Divider variant="solid" className="border-[1px] border-gray-300" />
             <p className="text-[var(--color-text-footer)]">
-              Khách sạn Phượng Hoàng 2 đạt tiêu chuẩn 3 sao tọa lạc tại mặt
-              biển, đường Hồ Xuân Hương, Sầm Sơn Thanh Hóa. Khách sạn xây dựng
-              16 tầng với 130 phòng nghỉ, hầu hết các phòng đều hướng ra biển
-              Sầm Sơn. Với sức chứa lên tới 600 tại hội trường tầng 2, khách sạn
-              Phượng Hoàng 2 là địa điểm tuyệt vời để quý khách hàng tổ chức sự
-              kiện.
+              <span className="text-yellow-600 font-bold">
+                KHÁCH SẠN PHƯỢNG HOÀNG 3
+              </span>{" "}
+              chào đón quý khách đến với không gian yên tĩnh của sự hiếu khách
+              thuần Việt và dịch vụ tiêu chuẩn quốc tế. Với 140 phòng khách sang
+              trọng, hệ thống phòng họp và nhà hàng chuyên nghiệp, dịch vụ khách
+              sạn hoàn hảo, Phượng Hoàng Hotel đang là sự lựa chọn của tất cả du
+              khách dừng chân tại Thanh Hóa.
             </p>
           </div>
           <div className="flex flex-col justify-start items-start space-y-4">
@@ -28,28 +30,37 @@ export default function TheFooter() {
             <div className="flex items-center space-x-2">
               <MailFilled style={{ color: "white" }} />
               <a
-                href="mailto:gm@phoenixhotel.vn"
+                href="mailto:Info@phoenixhotel.vn"
                 className="text-[var(--color-text-footer)] hover:text-white hover:underline"
               >
-                gm@phoenixhotel.vn
+                Info@phoenixhotel.vn
               </a>
             </div>
             <div className="flex items-center space-x-2">
               <PhoneFilled style={{ color: "white" }} />
               <a
-                href="tel:0945.293.201"
+                href="tel:0913293802"
                 className="text-[var(--color-text-footer)] hover:text-white hover:underline"
               >
-                Phone: 0945.293.201
+                Phone: 0913 293 802
               </a>
             </div>
             <div className="flex items-center space-x-2">
               <img className="h-[24px]" src="/zalo-icon.png" alt="Zalo Icon" />
               <a
-                href="https://zalo.me/0945.293.201"
+                href="https://zalo.me/0913293802"
                 className="text-[var(--color-text-footer)] hover:text-white hover:underline"
               >
-                Zalo: 0945.293.201
+                Zalo: 0913 293 802
+              </a>
+            </div>
+            <div className="flex items-center space-x-2">
+              <PhoneFilled style={{ color: "white" }} />
+              <a
+                href="tel:02373626888 "
+                className="text-[var(--color-text-footer)] hover:text-white hover:underline"
+              >
+                Hotline: 02373 626 888
               </a>
             </div>
             <div className="flex items-center space-x-2">
@@ -59,8 +70,7 @@ export default function TheFooter() {
                 alt="Location Icon"
               />
               <span className="text-[var(--color-text-footer)]">
-                Bãi tắm C, Đường Hồ Xuân Hương – P.Trung Sơn – TP Sầm Sơn, Thanh
-                Hóa
+                96 Lê Hoàn - P. Điện Biên - TP Thanh Hóa
               </span>
             </div>
           </div>
@@ -86,7 +96,7 @@ export default function TheFooter() {
           © 2024 Phuong Hoang Hospitality. All Rights Reserved.
         </span>
         <h3 className="font-semibold text-white text-xl mt-4 md:mt-0">
-          KHÁCH SẠN PHƯỢNG HOÀNG 2
+          KHÁCH SẠN PHƯỢNG HOÀNG 3
         </h3>
         <div className="flex justify-center md:justify-start items-center space-x-3 absolute right-0 hidden md:block">
           <a

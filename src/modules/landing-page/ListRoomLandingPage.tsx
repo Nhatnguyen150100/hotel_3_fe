@@ -40,8 +40,8 @@ export default function ListRoomLandingPage() {
           alt="Icon tiêu đề"
         />
         <span className="uppercase text-[32px] sm:text-[40px] font-normal">
-          <strong className="me-2">ưu đãi</strong>
-          dành cho bạn
+          <strong className="me-2">Danh sách</strong>
+          phòng dành cho bạn
         </span>
         <div className="min-h-[220px] w-full">
           <Swiper
@@ -69,7 +69,7 @@ export default function ListRoomLandingPage() {
           >
             {listRoom.map((item) => (
               <SwiperSlide key={item.id}>
-                <div className="flex flex-col justify-start items-start space-y-3 bg-[#f4f4f5]">
+                <div className="flex flex-col justify-start items-start space-y-3">
                   <div className="h-[250px] max-w-[380px]">
                     <ImageHover
                       src={item.img_1 ?? "/landing_page/swipper/swipper_1.jpg"}
@@ -78,7 +78,7 @@ export default function ListRoomLandingPage() {
                   </div>
                   <Link
                     to={DEFINE_ROUTE.roomDetail.replace(":id", item.id)}
-                    className="w-full text-xl font-semibold text-start first-letter:capitalize hover:text-yellow-600 hover:cursor-pointer"
+                    className="w-full text-xl font-semibold text-start first-letter:capitalize hover:text-blue-600 hover:cursor-pointer"
                   >
                     {item.name}
                   </Link>
@@ -110,7 +110,7 @@ export default function ListRoomLandingPage() {
                     </div>
                   </div>
                   <div className="flex flex-row justify-start items-center">
-                    <span className="font-semibold text-2xl text-yellow-600">
+                    <span className="font-semibold text-2xl text-blue-600">
                       <span className="text-base text-black italic font-normal">
                         Giá chỉ từ:{" "}
                       </span>{" "}
@@ -126,7 +126,7 @@ export default function ListRoomLandingPage() {
           onClick={() => {
             navigate(DEFINE_ROUTE.listRoom);
           }}
-          className="hover:text-white hover:bg-yellow-600 text-yellow-600 font-light text-lg flex justify-center items-center border border-solid rounded-3xl border-yellow-600 px-3 py-2 min-w-[220px]"
+          className="hover:text-white hover:bg-blue-600 text-blue-600 font-light text-lg flex justify-center items-center border border-solid rounded-3xl border-blue-600 px-3 py-2 min-w-[220px]"
         >
           Xem thêm
         </button>

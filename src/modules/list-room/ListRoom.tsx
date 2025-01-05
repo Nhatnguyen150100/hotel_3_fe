@@ -101,7 +101,7 @@ export default function ListRoom() {
                 <div className="flex flex-col justify-start items-start space-y-4 grow">
                   <Tooltip title="Nhấn để xem chi tiết">
                     <h1
-                      className="text-2xl font-semibold hover:text-yellow-600 hover:cursor-pointer"
+                      className="text-2xl font-semibold hover:text-blue-600 hover:cursor-pointer"
                       onClick={() => {
                         navigate(
                           DEFINE_ROUTE.roomDetail.replace(":id", room.id)
@@ -163,7 +163,7 @@ export default function ListRoom() {
                     </span>
                   </div>
                   <Button
-                    className="h-[45px] bg-yellow-600 hover:!bg-yellow-500"
+                    className="h-[45px] bg-blue-600 hover:!bg-blue-500"
                     type="primary"
                     variant="filled"
                     onClick={() => {

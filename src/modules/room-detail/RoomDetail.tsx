@@ -155,7 +155,7 @@ export default function RoomDetail() {
                   <h1 className="sm:text-xl text-lg font-semibold">
                     Giá phòng ngày thường
                   </h1>
-                  <span className="font-semibold text-yellow-600 sm:text-3xl text-xl">
+                  <span className="font-semibold text-blue-600 sm:text-3xl text-xl">
                     {room.normalDayPrice
                       ? formatCurrency(room.normalDayPrice)
                       : "Liên hệ trực tiếp"}
@@ -165,7 +165,7 @@ export default function RoomDetail() {
                   <h1 className="sm:text-xl text-lg font-semibold">
                     Giá phòng cuối tuần
                   </h1>
-                  <span className="font-semibold text-yellow-600 sm:text-3xl text-xl">
+                  <span className="font-semibold text-blue-600 sm:text-3xl text-xl">
                     {room.weekendPrice
                       ? formatCurrency(room.weekendPrice)
                       : "Liên hệ trực tiếp"}
@@ -175,7 +175,7 @@ export default function RoomDetail() {
                   <h1 className="sm:text-xl text-lg font-semibold">
                     Giá phòng ngày lễ
                   </h1>
-                  <span className="font-semibold text-yellow-600 sm:text-3xl text-xl">
+                  <span className="font-semibold text-blue-600 sm:text-3xl text-xl">
                     {room.holidayPrice
                       ? formatCurrency(room.holidayPrice)
                       : "Liên hệ trực tiếp"}
@@ -184,7 +184,7 @@ export default function RoomDetail() {
               </div>
             </div>
             <Button
-              className="h-[65px] w-full bg-yellow-600 rounded-2xl hover:!bg-yellow-500 sm:text-xl text-base"
+              className="h-[65px] w-full bg-blue-600 rounded-2xl hover:!bg-blue-500 sm:text-xl text-base"
               type="primary"
               variant="filled"
               onClick={() => {
