@@ -2,7 +2,7 @@ import ImageHover from "../../components/base/ImageHover";
 
 export default function KaraokeService() {
   return (
-    <div className="py-5 w-full container bg-transparent space-y-10 flex flex-col justify-start items-center">
+    <div className="py-5 w-full container bg-transparent space-y-10 flex flex-col justify-start items-center sm:mt-0 mt-16">
       <img width="200" height="60" src="./icontieude.png" alt="Icon tiêu đề" />
       <h1 className="text-blue-800 text-3xl font-semibold">Dịch vụ karaoke</h1>
       <p className="text-center text-md text-gray-500 italic sm:text-lg">

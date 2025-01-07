@@ -155,7 +155,7 @@ export default function TheLandingPage() {
             }}
           />
         </div>
-        <div className="w-full grid grid-cols-1 sm:grid-cols-4 gap-5 px-4 sm:px-24 pt-[100px] sm:pt-0">
+        <div className="w-full grid grid-cols-1 sm:grid-cols-4 gap-5 px-4 sm:px-24 pt-[80px] sm:pt-0">
           {DEFINE_ICON_SLOGAN.map((item, index) => (
             <div
               key={index}

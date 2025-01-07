@@ -26,7 +26,7 @@ export default function RoomDetail() {
   }, [id]);
 
   return (
-    <div className="flex flex-col justify-start items-start py-10">
+    <div className="flex flex-col justify-start items-start py-10 sm:mt-[60px] mt-[40px]">
       <div className="flex flex-row">
         {room && (
           <div className="container bg-transparent flex flex-col items-start justify-start space-y-10">
