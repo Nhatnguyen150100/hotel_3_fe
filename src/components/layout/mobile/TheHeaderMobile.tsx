@@ -100,6 +100,12 @@ export default function TheHeaderMobile() {
             Bản đồ
           </a>
         </div>
+        <div className="flex flex-col justify-center items-center space-x-2 mt-3 space-y-5">
+          <span className="text-sm font-medium">
+            Hotline: <a href="tel:0945.293.201">0945.293.201</a>
+          </span>
+          <img className="w-40" src="/qr_hotel.png" alt="QR" />
+        </div>
       </Drawer>
     </header>
   );

@@ -23,7 +23,7 @@ export default function DestinationDetail() {
 
   return (
     <>
-      <div className="w-full bg-gray-100">
+      <div className="w-full bg-gray-100 sm:mt-20 mt-16">
         <div className="container bg-transparent py-3">
           <Breadcrumb>
             <Breadcrumb.Item>

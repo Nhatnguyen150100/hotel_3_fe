@@ -22,7 +22,7 @@
 
 header {
   background-color: #fff;
-  position: sticky;
+  position: fixed;
   transition: all 0.3s ease;
   top: 0;
   z-index: 1000;
@@ -39,6 +39,29 @@ header {
   justify-content: center;
   align-items: center;
 }
+
+.rotate-animate {
+  animation: rotate 0.5s infinite ease-in-out;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(8deg);
+  }
+  50% {
+    transform: rotate(-8deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 
 .rotate-around {
   animation: spinning 4s linear infinite;

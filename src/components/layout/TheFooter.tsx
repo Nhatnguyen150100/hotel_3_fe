@@ -1,9 +1,9 @@
-import { MailFilled, PhoneFilled } from "@ant-design/icons";
-import { Divider } from "antd";
+import { ArrowUpOutlined, MailFilled, PhoneFilled } from "@ant-design/icons";
+import { Button, Divider, Tooltip } from "antd";
 
 export default function TheFooter() {
   return (
-    <footer className="p-6 md:p-24 w-full bg-[var(--bg-footer)]">
+    <footer className="p-6 md:p-24 w-full bg-[var(--bg-footer)] relative">
       <div className="container bg-transparent flex flex-col items-center justify-start space-y-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           <div className="flex flex-col justify-start items-start space-y-4">
@@ -121,6 +121,26 @@ export default function TheFooter() {
           </a>
         </div>
       </div>
+      <Tooltip title="Liên hệ ngay">
+        <a href="tel:0945.293.201" className="h-12 w-12 fixed sm:left-16 left-5 sm:bottom-14 bottom-8 flex flex-col justify-center items-center space-y-3 rotate-animate hover:cursor-pointer z-10">
+          <img src="/telephone-call.png" alt="contact us" />
+        </a>
+      </Tooltip>
+      <Tooltip title="Nhấn để trở lại đầu trang">
+        <Button
+          variant="filled"
+          onClick={() => {
+            window.scrollTo({
+              top: 0,
+              left: 0,
+              behavior: "smooth",
+            });
+          }}
+          className="h-12 w-12 rounded-full absolute sm:right-10 right-5 sm:bottom-14 bottom-8"
+        >
+          <ArrowUpOutlined />
+        </Button>
+      </Tooltip>
     </footer>
   );
 }
