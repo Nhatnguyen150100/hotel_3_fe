@@ -1,4 +1,3 @@
-import React from "react";
 import ImageHover from "../../components/base/ImageHover";
 
 export default function KaraokeService() {

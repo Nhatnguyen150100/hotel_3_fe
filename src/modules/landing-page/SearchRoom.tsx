@@ -1,7 +1,5 @@
 import {
   EnvironmentOutlined,
-  EuroCircleOutlined,
-  HomeOutlined,
   SearchOutlined,
 } from "@ant-design/icons";
 import { Button, DatePicker, Input, message } from "antd";

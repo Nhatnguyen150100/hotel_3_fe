@@ -28,8 +28,8 @@ import ListDestinations from "../modules/list-destinations/ListDestinations";
 import Introduce from "../modules/landing-page/Introduce";
 import PartyService from "../modules/service/PartyService";
 import ConferenceService from "../modules/service/ConferenceService";
-import KaraokeService from "../modules/service/karaokeService";
 import PlaygroundService from "../modules/service/PlaygroundService";
+import KaraokeService from "../modules/service/KaraokeService";
 
 const router = createBrowserRouter([
   {
